@@ -3,3 +3,5 @@ version: '${project.version}'
 main: rama.spigot.Temperature
 api-version: '1.20'
 load: STARTUP
+depend:
+  - PlaceholderAPI

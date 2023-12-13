@@ -1,0 +1,11 @@
+config:
+
+  temperature:
+    format: "x°C" #where "x" is replaced by the temperature integer.
+    player_normal_temperature: 20 #This is the initial temperature for new players.
+
+
+
+  display:
+    actionbar:
+      format: "%temperature_formatted% "
