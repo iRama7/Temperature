@@ -2,10 +2,15 @@ config:
 
   temperature:
     format: "x°C" #where "x" is replaced by the temperature integer.
-    player_normal_temperature: 20 #This is the initial temperature for new players.
-
-
+    normal_temperature: 20 #This is the initial temperature for new players.
+    change_delay: 25-35 #Range of time, in ticks, for the temperature changing delay.
 
   display:
     actionbar:
-      format: "%temperature_formatted% "
+      enable: true
+      format: "%temperature_formatted% actionbar"
+    bossbar:
+      enable: false
+      format: "%temperature_formatted% bossbar"
+      color: WHITE #BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+      style: SOLID #SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20, SOLID

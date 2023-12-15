@@ -35,7 +35,7 @@ public class Placeholders extends PlaceholderExpansion {
 
         if(params.equals("formatted")){
             if(player != null && main.getTemperedMain().getTPlayer(player) != null){
-                return String.valueOf(main.getTemperedMain().getTPlayer(player).getTemperature());
+                return String.valueOf(main.getTemperedMain().getTPlayer(player).getTemperatureFormatted());
             }
         }
 
